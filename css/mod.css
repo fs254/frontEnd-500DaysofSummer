@@ -1,0 +1,107 @@
+/*!
+ * Start Bootstrap - The Big Picture (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+}
+
+.full {
+    background: url("../img/background.gif") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mainContainer,
+.castContainer,
+.trailerContainer{
+	height: 300px;
+    background-color: none;
+	position: absolute;
+    top: 100px;
+    left:25px;
+    right:25px;
+}
+
+.bottomContainer {
+	height: 80px;
+    background-color: none;
+	position: absolute;
+    bottom: 36px;
+    left:25px;
+    right:25px;
+}
+
+.btn-primary-outline {
+    background-color: transparent;
+    border-color: #222;
+    color: #666;
+}
+
+.btn-primary-outline:hover {
+    border-color: #444;
+    color: #666;
+}
+
+.overlay {
+	background: url("../img/flower.gif") no-repeat center center fixed;   
+ 	position:absolute;
+ 	opacity:1;
+ 	left:0;
+ 	right:0;
+ 	top:0;
+ 	bottom:0;
+ 	z-index:1
+ 	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: transparent; 
+    overflow-x: hidden;
+}
+
+.navbar {
+	background-color: #181818;
+	border-color: #202020;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+    font-size:large;
+}
+
+.castContent {
+	font-size: large;
+}
+
+.title-super {
+	font-size: 45px;
+}
+
+.form-control {
+    background-color:rgba(0,0,0,0)
+    border:none
+}
+
+.navbar .nav > li {
+    float:none;
+    display:inline-block;
+}
+
+.transparent-input{
+       background-color:rgba(0,0,0,0) !important;
+       border:none !important;
+}
+
+.input-group {
+    max-width: 300px;
+}

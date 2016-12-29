@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="full" lang="en" ng-app="app" ng-cloak>
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Project-FeiShan</title>
+
+    <style> [ng\:cloak], [ng-cloak], .ng-cloak {
+        display:none;
+        } </style>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/mod.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+
+<body>
+    <div class="overlay" style="display:none"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">Menu</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="storyline" href="#/">Storyline</a>
+                    </li>
+                    <li>
+                        <a class="cast" href="#/">Cast</a>
+                    </li>
+                    <li>
+                        <a class="trailer" href="#/">Trailer</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container mainContainer">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-2"></div>
+            <div class="col-lg-7 col-md-7 col-sm-10">
+                <h1  class="title-super">(500) Days of Summer</h1>
+                <div class="row" style="height: 20px"></div>
+                <p class="storylineContent" style="text-align:justify; display:none">Boy meets girl. Boy falls in love. Girl doesn't. This post modern love story is never what we expect it to be--it's thorny yet exhilarating, funny and sad, a twisted journey of highs and lows that doesn't quite go where we think it will. When Tom, a hapless greeting card copywriter and hopeless romantic, is blindsided after his girlfriend Summer dumps him, he shifts back and forth through various periods of their 500 days "together" to try to figure out where things went wrong. His reflections ultimately lead him to finally rediscover his true passions in life.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <div class="container castContainer">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-2"></div>
+            <div class="col-lg-7 col-md-7 col-sm-10">
+                <h1  class="title-super">(500) Days of Summer</h1>
+                <div class="row" style="height: 30px"></div>
+                <div class="row">
+                    <div class="col-md-7 col-sm-7 col-xs-10">
+                        <div ng-controller="ctrl1">
+                            <p class="cast1 castContent" style="text-align:justify; display:none">{{new}}</p>
+                            <div class="input-group castContent" style="display:none">
+                                <input type="text" ng-model="first" class="form-control transparent-input" placeholder="Edit">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-secondary transparent-input" ng-click="updateValue()" type="button">Done</button>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="height: 15px"></div>
+                <div class="row">
+                    <div class="col-md-7 col-sm-7 col-xs-10">
+                        <div ng-controller="ctrl2">
+                            <p class="cast2 castContent" style="text-align:justify; display:none">{{new}}</p>
+                            <div class="input-group castContent" style="display:none">
+                                <input type="text" ng-model="first" class="form-control transparent-input" placeholder="Edit">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-secondary-outline transparent-input" ng-click="updateValue()" type="button">Done</button>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <div class="container trailerContainer">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-2"></div>
+            <div class="col-lg-7 col-md-7 col-sm-10">
+                <h1  class="title-super">(500) Days of Summer</h1>
+                <div class="row" style="height: 20px"></div>
+                <div class="embed-responsive embed-responsive-16by9 trailerContent" style="display:none">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PsD0NpFSADM" allowfullscreen></iframe>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <div class="container bottomContainer">
+        <div class="row">
+            <div class="col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+            <button type="button" class="btn btn-primary-outline">Show flowers</button>
+            <!-- /.button -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- picure -->
+    <script src="js/mod.js"></script>
+    <!-- AngularJS -->
+    <script src="js/angular.min.js"></script>
+    <!-- Route -->
+    <script src="js/angular-route.min.js"></script>
+    <!-- app -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
